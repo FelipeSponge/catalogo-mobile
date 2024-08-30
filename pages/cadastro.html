@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BoyDB</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="../scripts/telaCadastro.js" type="module" defer></script>
+  </head>
+  <body>
+    <section class="secao-template tela-cadastro">
+      <h1 class="secao-template__titulo tela-cadastro__titulo">BoyDB</h1>
+      <form class="tela-cadastro__formulario">
+        <fieldset class="secao-template__campos tela-cadastro__campos">
+          <span
+            class="secao-template__campos-titulo tela-cadastro__campos-titulo"
+            >Cadastrar</span
+          >
+          <label
+            class="secao-template__campos-label tela-cadastro__campos-label"
+            for="email"
+            >Nome</label
+          >
+          <input
+            class="secao-template__campos-input tela-cadastro__campos-input tela-cadastro__campos-input--nome"
+            type="text"
+            placeholder="Digite seu nome"
+            id="nome"
+          />
+          <label
+            class="secao-template__campos-label tela-cadastro__campos-label"
+            for="email"
+            >Email</label
+          >
+          <input
+            class="secao-template__campos-input tela-cadastro__campos-input tela-cadastro__campos-input--email"
+            type="email"
+            placeholder="Digite seu email"
+            id="email"
+          />
+          <label
+            class="secao-template__campos-label tela-cadastro__campos-label"
+            for="senha"
+            >Senha</label
+          >
+          <input
+            class="secao-template__campos-input tela-cadastro__campos-input tela-cadastro__campos-input--senha"
+            type="password"
+            placeholder="Digite sua senha"
+            id="senha"
+          />
+          <button
+            type="submit"
+            class="secao-template__campos-botao tela-cadastro__campos-botao--cadastrar"
+          >
+            Cadastrar
+          </button>
+          <div
+            class="secao-template__campos-avisos tela-cadastro__campos-avisos"
+          >
+            <a
+              href="../index.html"
+              class="secao-template__campos--cadastrar tela-cadastro__campos--cadastrar"
+              >Voltar para tela de <strong>Login</strong></a
+            >
+            <p
+              class="secao-template__campos--cadastrar tela-cadastro__campos--efetuado"
+            ></p>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>

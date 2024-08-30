@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BoyDB</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../styles/filmesSeries.css" />
+    <link rel="stylesheet" href="../styles/categorias.css" />
+    <link rel="stylesheet" href="../styles/conteudo.css" />
+    <link rel="stylesheet" href="../styles/minhaLista.css" />
+    <link rel="stylesheet" href="../styles/generos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="conteudo__cabecalho">
+      <h3 class="cabecalho__titulo">B</h3>
+      <div>
+        <input
+          class="cabecalho__pesquisar"
+          type="text"
+          placeholder="Pesquisar"
+        />
+      </div>
+      <h3 class="cabecalho__usuario"></h3>
+      <nav class="cabecalho__menu hidden">
+        <ul class="menu">
+          <li class="menu__item menu__item--inicio">Inicio</li>
+          <li class="menu__item menu__item--categorias">Categorias</li>
+          <li class="menu__item menu__item--lista">Minha Lista</li>
+          <li class="menu__item menu__item--sair">Sair</li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="secao-lista hidden">
+      <h3 class="minha-lista__titulo">Minha Lista:</h3>
+      <div class="minha-lista"></div>
+    </section>
+
+    <section class="categorias hidden">
+      <span class="categorias__titulo">Generos</span>
+      <div class="categorias__tipos">
+        <ul class="categorias__listas">
+          <li class="categorias__item-titulo">Filmes</li>
+          <li data-nome="filme" class="categorias__item" id="28">Ação</li>
+          <li data-nome="filme" class="categorias__item" id="12">Aventura</li>
+          <li data-nome="filme" class="categorias__item" id="35">Comédia</li>
+          <li data-nome="filme" class="categorias__item" id="18">Drama</li>
+          <li data-nome="filme" class="categorias__item" id="10749">Romance</li>
+          <li data-nome="filme" class="categorias__item" id="878">
+            Ficção Cientifica
+          </li>
+          <li data-nome="filme" class="categorias__item" id="14">Fantasia</li>
+          <li data-nome="filme" class="categorias__item" id="27">Terror</li>
+          <li data-nome="filme" class="categorias__item" id="16">Animação</li>
+          <li data-nome="filme" class="categorias__item" id="36">Histórico</li>
+          <li data-nome="filme" class="categorias__item" id="10402">Musica</li>
+          <li data-nome="filme" class="categorias__item" id="10752">Guerra</li>
+          <li data-nome="filme" class="categorias__item" id="99">
+            Documentário
+          </li>
+          <li data-nome="filme" class="categorias__item" id="53">Thriller</li>
+        </ul>
+        <ul class="categorias__listas">
+          <li data-nome="serie" class="categorias__item-titulo">Séries</li>
+          <li data-nome="serie" class="categorias__item" id="10759">
+            Ação e Aventura
+          </li>
+          <li data-nome="serie" class="categorias__item" id="16">Animação</li>
+          <li data-nome="serie" class="categorias__item" id="35">Comédia</li>
+          <li data-nome="serie" class="categorias__item" id="18">Drama</li>
+          <li data-nome="serie" class="categorias__item" id="10765">
+            Sci-Fi e Fantasia
+          </li>
+          <li data-nome="serie" class="categorias__item" id="27">Reality</li>
+          <li data-nome="serie" class="categorias__item" id="9648">Mistério</li>
+          <li data-nome="serie" class="categorias__item" id="10762">Kids</li>
+          <li data-nome="serie" class="categorias__item" id="10766">Soap</li>
+          <li data-nome="serie" class="categorias__item" id="10768">
+            Guerra e Política
+          </li>
+          <li data-nome="serie" class="categorias__item" id="99">
+            Documentário
+          </li>
+          <li data-nome="serie" class="categorias__item" id="1076">Talk</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="categoria-conteudo"></section>
+
+    <section class="filmes-series-conteudo hidden">
+      <button class="filmes-series__botao">Inicio</button>
+      <h3 class="filmes-series__titulo">Filmes e Séries</h3>
+      <div class="filmes-series hidden"></div>
+    </section>
+
+    <script type="module" src="../scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </body>
+</html>

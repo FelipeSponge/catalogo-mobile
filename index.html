@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BoyDB</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/validandoLogin.js" type="module" defer></script>
+  </head>
+  <body>
+    <section class="secao-template tela-inicio">
+      <h1 class="secao-template__titulo tela-inicio__titulo">BoyDB</h1>
+      <form class="tela-inicio__formulario">
+        <fieldset class="secao-template__campos tela-inicio__campos">
+          <span class="secao-template__campos-titulo tela-inicio__campos-titulo"
+            >Entrar</span
+          >
+          <label
+            class="secao-template__campos-label tela-inicio__campos-label"
+            for="email"
+            >Email</label
+          >
+          <input
+            class="secao-template__campos-input tela-inicio__campos-input tela-inicio__campos-input--email"
+            type="email"
+            placeholder="Digite seu email"
+            id="email"
+          />
+          <label
+            class="secao-template__campos-label tela-inicio__campos-label"
+            for="senha"
+            >Senha</label
+          >
+          <input
+            class="secao-template__campos-input tela-inicio__campos-input tela-inicio__campos-input--senha"
+            type="password"
+            placeholder="Digite sua senha"
+            id="senha"
+          />
+          <button
+            class="secao-template__campos-botao tela-inicio__campos-botao--entrar"
+          >
+            Entrar
+          </button>
+          <p class="tela-inicio__campos--aviso"></p>
+          <div class="secao-template__campos-avisos tela-inicio__campos-avisos">
+            <span
+              class="secao-template__campos-descricao tela-inicio__campos-descricao"
+              >Ainda não tem uma conta?
+            </span>
+            <a
+              href="./pages/cadastro.html"
+              class="secao-template__campos--cadastrar tela-inicio__campos--cadastrar"
+              >Cadastrar-se</a
+            >
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>

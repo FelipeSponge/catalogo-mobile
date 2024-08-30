@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.secao-template {
+  min-height: 100vh;
+  background: url("../img/mobile-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+.secao-template__titulo {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: #6482ad;
+  padding: 0.1em 0 0 0.1em;
+  letter-spacing: 3px;
+}
+
+.secao-template__campos {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  padding: 1.9em;
+  margin: 2em;
+  border-radius: 20px;
+}
+
+.secao-template__campos-titulo {
+  font-size: 45px;
+  font-weight: 600;
+  margin: 1em 0 1em 0;
+  color: white;
+  align-self: center;
+}
+
+.secao-template__campos-label {
+  font-size: 20px;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  color: white;
+}
+
+.secao-template__campos-input {
+  padding: 1em;
+  margin-bottom: 0.5em;
+  border-radius: 5px;
+  border: none;
+}
+
+.secao-template__campos-input::placeholder {
+  font-size: 16px;
+}
+
+.secao-template__campos-botao {
+  background-color: #6482ad;
+  padding: 0.5em;
+  font-size: 30px;
+  font-weight: 600;
+  border: none;
+  margin: 0.5em 0 0 0;
+  border-radius: 10px;
+  color: white;
+}
+
+.secao-template__campos-avisos {
+  margin: 1em 0 2em 0;
+  color: white;
+}
+
+.secao-template__campos--cadastrar {
+  text-decoration: none;
+  color: #6482ad;
+  margin-left: 0.2em;
+  white-space: nowrap;
+}
+
+.secao-template__campos--cadastrar > strong {
+  color: white;
+}
+
+.tela-inicio__campos--aviso {
+  color: #6482ad;
+  margin-top: 0.3em;
+  font-weight: 400;
+}
+
+.tela-cadastro__campos--efetuado {
+  margin-top: 1em;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(247, 247, 247);
+  font-weight: 600;
+}
